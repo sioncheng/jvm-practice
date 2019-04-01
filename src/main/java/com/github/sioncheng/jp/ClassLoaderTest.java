@@ -11,10 +11,6 @@ import java.net.URLClassLoader;
 public class ClassLoaderTest {
 
     public static void main(String[] args) throws Exception {
-
-        URLClassLoader urlClassLoader = new URLClassLoader();
-
-
         ClassLoader myClassLoader = new ClassLoader() {
             @Override
             public Class<?> loadClass(String name) throws ClassNotFoundException {
